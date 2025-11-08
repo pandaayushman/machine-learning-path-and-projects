@@ -5,12 +5,12 @@ from src.preprocess import preprocess_data
 class TestParkinsonPipeline(unittest.TestCase):
 
     def test_data_loading(self):
-        df = load_data("data/parkinsons_dataset.csv")
+        df = load_data("data/parkinsons_kaggle.csv")
         self.assertIsNotNone(df)
         self.assertFalse(df.empty)
 
     def test_preprocessing(self):
-        df = load_data("data/parkinsons_dataset.csv")
+        df = load_data("datasets/parkinsons_kaggle.csv")
         X, y, scaler = preprocess_data(df)
         self.assertEqual(X.shape[0], len(y))
         self.assertIsNotNone(scaler)

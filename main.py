@@ -9,7 +9,7 @@ from src.evaluator import evaluate_model
 from src.visualizer import visualize_results
 
 # Paths
-DATA_PATH = "data/parkinsons_dataset.csv"
+DATA_PATH = "datasets/parkinsons_dataset.csv"
 MODEL_DIR = "models/trained_models"
 RESULTS_DIR = "results"
 
